@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://thymeleaf.org">
+<head>
+	<title>Products</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>	
+	
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Id</th>
+        <th>Description</th>
+    </tr>    
+        <td th:text="${product.id}"></td>
+        <td th:text="${product.description}"></td>
+    </tr>
+    <button href="/products">Send another project</button>
+</table>
+</body>
+</html>	

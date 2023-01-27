@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://thymeleaf.org">
+
+<head>
+	<title>Products</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+
+<body>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Number File</th>
+				<th>Title</th>
+				<th>Name</th>
+				<th>Lastname</th>
+				<th>Address</th>
+				<th>City</th>
+				<th>State</th>
+				<th>CP</th>
+				<th>Phone House</th>
+				<th>Phone Office</th>
+				<th>Email</th>
+				<th>Sex</th>
+				<th>NSS</th>
+				<th>Birthplace</th>
+				<th>Birthdate</th>
+				<th>Age</th>
+				<th>Medic</th>
+				<th>Civil State</th>
+				<th>Mother Name</th>
+				<th>Father Name</th>
+				<th>Couple Name</th>
+				<th>Precedence</th>
+				<th>Ocupation</th>
+				<th>Escolarity</th>
+				<th>School</th>
+				<th>Observations</th>
+			</tr>
+		</thead>
+		<tbody>
+			<td th:text="${patient.numberFile}"></td>
+			<td th:text="${patient.title}"></td>
+			<td th:text="${patient.name}"></td>
+			<td th:text="${patient.lastname}"></td>
+			<td th:text="${patient.address}"></td>
+			<td th:text="${patient.city}"></td>
+			<td th:text="${patient.state}"></td>
+			<td th:text="${patient.cp}"></td>
+			<td th:text="${patient.phoneHouse}"></td>
+			<td th:text="${patient.phoneOffice}"></td>
+			<td th:text="${patient.email}"></td>
+			<td th:text="${patient.sex}"></td>
+			<td th:text="${patient.nss}"></td>
+			<td th:text="${patient.birthplace}"></td>
+			<td th:text="${patient.birthdate}"></td>
+			<td th:text="${patient.age}"></td>
+			<td th:text="${patient.medic}"></td>
+			<td th:text="${patient.civilState}"></td>
+			<td th:text="${patient.motherName}"></td>
+			<td th:text="${patient.fatherName}"></td>
+			<td th:text="${patient.coupleName}"></td>
+			<td th:text="${patient.precedence}"></td>
+			<td th:text="${patient.ocupation}"></td>
+			<td th:text="${patient.escolarity}"></td>
+			<td th:text="${patient.school}"></td>
+			<td th:text="${patient.observations}"></td>
+		</tbody>
+	</table>
+
+	</table>
+</body>
+
+</html>

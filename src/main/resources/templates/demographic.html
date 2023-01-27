@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://thymeleaf.org">
+
+<head>
+	<title>Init from html</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+
+<body>
+	<form method="post" action="#" th:object="${demographic}" th:action="@{/demographic}">
+		<form>
+			<label>Race:</label>
+			<br>
+			<input type="checkbox" th:field="*{race}" th:value="'Indio americano o nativo de Alaska'" />Indio americano
+			o nativo de Alaska
+			<br>
+			<input type="checkbox" th:field="*{race}" th:value="'Asiático'" />Asiático
+			<br>
+			<input type="checkbox" th:field="*{race}" th:value="'Negro o afro-americano'" />Negro o afro-americano
+			<br>
+			<input type="checkbox" th:field="*{race}"
+				th:value="'Nativo de Hawaii o de otras islas del Pacífico'" />Nativo de Hawaii o de otras islas del
+			Pacífico
+			<br>
+			<input type="checkbox" th:field="*{race}" th:value="'Blanco'" />Blanco
+			<br>
+			<label>Ethnic Origin:</label>
+			<br>
+			<input type="checkbox" th:field="*{ethnicOrigin}" th:value="'Hispano o latino'" />Hispano o latino
+			<br>
+			<input type="checkbox" th:field="*{ethnicOrigin}" th:value="'Ni hispano ni latino'" />Ni hispano ni latino
+			<br>
+			<input type="submit" value="Submit" />
+		</form>		
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://thymeleaf.org">
+<head>
+	<title>Products</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>	
+	
+</head>
+<body>
+    <form method="post" action="#" th:object="${producto}" th:action="@{/products}">
+        <div>
+            <label for="id">Id:</label>
+            <input type="text" th:field="*{id}" id="id" name="id" required>
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" th:field="*{description}" name="description"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>	
